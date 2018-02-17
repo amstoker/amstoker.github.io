@@ -1,0 +1,42 @@
+* { margin: 0 ; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Ariel, Times New Roman;
+    color: #000000;
+}
+
+h1 {
+    font-size: 3rem ;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.25rem;
+    text-align: center;
+    border-bottom: 1px solid #ffff;
+}
+
+header, main, footer {
+    text-align: center;
+    margin: 1.25rem auto;
+    padding: 1rem;
+    max-width: 1375px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #3399ff;
+    color: #fff;
+}
+
+header img {
+    width: 200;
+    height: auto;
+    float: right;
+}
+
+footer {
+    font-size: .75rem;
+}
