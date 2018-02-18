@@ -1,0 +1,155 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+
+
+body {
+   font-size: 16px;
+   font-family: "Ariel", "Times New Roman";
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #e7ecef
+      
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: 1.25rem auto;
+    padding: 1rem;
+    max-width: 1200px;
+    align-content: center;
+    
+}
+
+header {
+    font-size: 1.5rem ;
+    color: #154360;
+}
+header h1 {
+    font-size: 4rem;
+    color: #154360;
+    text-align: right;
+    border-bottom: 1px solid #154360
+    
+}
+header img {
+    width: 200px;
+    height: auto;
+    float: right;
+}
+header .subheading {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #F39C12;
+}
+
+nav {display: ;
+    
+}
+nav button {display:block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #154360;
+}
+nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #F39C12;
+    color: white;
+}
+nav ul li a:hover {
+    background-color: #F39C12
+}
+nav ul.hide {diplay: none;}
+
+main {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 350px;
+    color: #154360
+}
+
+main h2 {
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 2px solid #F39C12
+
+    
+    }
+#tenday {
+    display:none
+}
+section.forecast h3 {
+    border-style: solid;
+    border-color: #F39C12;
+    margin-left: auto;
+    margin-left: auto;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;  
+   }
+table, th, td {
+    border: 2px solid #F39C12;
+    padding: 10px
+       }
+main figure { 
+    margin: 0 0 .2rem 2%; 
+    width:100%;
+    align-content: center;
+    }
+main figure img { 
+    min-width: 325px; 
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    border-color: #F39C12;
+    
+
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center; 
+    }
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    min-width: 325px; /* fill the page in the small/phone view */
+    margin: 0;
+     border: solid;
+    border-color: #154360;
+}
+
+footer {
+    background-color: #154360;
+    text-align: center;
+}
+footer aside {
+    color: #F39C12
+
+}
+footer>p {
+    color: #F39C12
+       
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
