@@ -25,7 +25,7 @@
   </header>
 
   <!-- site navigation use placeholder references -->
-  <nav>
+  <nav> 
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul> 
     	<li><a href="#">Home</a></li>
@@ -125,10 +125,10 @@
     
 
     
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Wait 15 Minutes | <span id="currentdate"></span></p>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Wait 15 Minutes | <span id="currentdate">Monday 6, 2020</span></p>
   </footer>
 
-    
+   
     <script>
 function myFunction() {
     var d = new Date(2020, 04, 06);
@@ -142,7 +142,7 @@ function myFunction() {
     weekday[6] = "Saturday";
 
     var n = weekday[d.getDay()];
-    document.getElementById("demo").innerHTML = n;
+    document.getElementById("currentdate").innerHTML = n;
 }
         
 </script>
