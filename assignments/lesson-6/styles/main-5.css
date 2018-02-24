@@ -44,13 +44,16 @@ header .subheading {
     color: #F39C12;
 }
 
-nav {display: ;
+nav {display:hide;
     
 }
-nav button {display:block;
-}
+nav button {
+    display:block;}
+    * {margin:0}
+
 
 nav ul {
+    display: none;
     list-style-type: none;
     margin: 1rem;
     padding: 1rem;
@@ -76,7 +79,7 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: #F39C12
 }
-nav ul.hide {diplay: none;}
+
 
 main {
     display: inline-block;

@@ -1,0 +1,57 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+    body {
+        align-content: center;
+        padding: 0;
+    }
+    main {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 150px;
+    max-width: 660px;
+    color: #154360;
+    }
+    main figure img {
+        min-width: 35em;
+        align-content: center;
+    }
+    nav {
+        display: inline;
+    }
+  nav button { 
+      display:none; }  /* hamburger button does not need to be shown */
+    nav.ul.hide {display: block;}
+    nav ul {
+        display: block;
+    }
+    
+    
+  #tenday { 
+      display: inline; }  /* show the 10-day forecast with the medium view and up */
+  
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+    ul {
+        list-style-type: non;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    li{
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #111;
+    }
+   
+}

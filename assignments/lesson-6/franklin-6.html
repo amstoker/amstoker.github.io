@@ -26,8 +26,8 @@
 
   <!-- site navigation use placeholder references -->
   <nav> 
-    <button onclick="toggleNavMenu()">&#9776;</button>
-    <ul> 
+        <button  onclick="toggleNavMenu()">&#9776;</button>
+      <ul id="NavMenu" class="hide">
     	<li><a href="#">Home</a></li>
     	<li class="active"><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
@@ -35,10 +35,9 @@
     	<li><a href="#">Storm Center</a></li>
     	<li><a href="#">Gallery</a></li>
     </ul>
-      <link href="styles/main-5.css" rel="stylesheet" media="only screen and (max-width: 600px)"> <!-- default styles - small/phone views -->
-        <link href="styles/medium-5.css" rel="stylesheet" media="only screen and (max-width: 900px)"> <!-- medium/tablet views -->
-        <link href="styles/large-5.css" rel="stylesheet" media="only screen and (min-width: 901px)"> <!-- large/wide/desktop views -->
-  </nav>
+     
+  
+    </nav>
     
   <main>
     <h2>The City of Franklin</h2>
@@ -125,31 +124,11 @@
     
 
     
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Wait 15 Minutes | <span id="currentdate">Monday 6, 2020</span></p>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Wait 15 Minutes | <span id="currentdate"></span></p>
   </footer>
 
    
-    <script>
-function myFunction() {
-    var d = new Date(2020, 04, 06);
-    var weekday = new Array(7);
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
-
-    var n = weekday[d.getDay()];
-    document.getElementById("currentdate").innerHTML = n;
-}
-        
-</script>
-    
-    <script>
-document.getElementById("demo").innerHTML = Date();
-</script>
+  
     
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
