@@ -169,6 +169,7 @@ article {
     justify-content: flex-start;
     align-items: center
 }
+
 footer {
     display: flex;
     flex-flow: column;

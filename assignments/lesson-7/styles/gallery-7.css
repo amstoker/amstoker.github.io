@@ -2,26 +2,17 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-/* This main css file contains the default rules and is geared toward the small/phone view */
-
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
-
-
-h2 {
-    display: inline-flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
+main h2 {
+    font-size: 3rem;
     text-align: center;
-    border-bottom: 2px solid #F39C12
-
-
-
-grid{
+    
+grid {
     display: grid;
-    grid-auto-columns: 400px 400px 400px;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    grid-auto-columns: 400px 400px;
+    grid-template-rows: 200px 200px;
     grid-gap: 20px;
 }
+
+ box-shadow: 3px 3px 5px 6px #ccc;
+
 
