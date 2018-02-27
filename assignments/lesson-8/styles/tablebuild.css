@@ -43,7 +43,7 @@ tr:nth-child(6) {
     background-color: #628ca6;
     color: white;
 }
-tr:nth-child(7) {
+tr:nth-child(7) td:first-child {
     background-color: #e7f0ed;
     font-style: italic
 }
