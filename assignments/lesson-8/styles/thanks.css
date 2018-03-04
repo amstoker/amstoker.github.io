@@ -6,7 +6,7 @@
 
 body {
    font-size: 16px;
-   /*font-family: "Ariel", "Times New Roman";*/
+   font-family: "Ariel", "Times New Roman";
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #e7ecef
       
@@ -93,102 +93,14 @@ nav ul li a:hover {
     background-color: #F39C12
 }
 
-
-main {
-    display: inline-flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 350px;
-    color: #154360
-}
-
-main h2 {
+h1 {
     display: inline-flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
+    color: #154360;
     text-align: center;
     border-bottom: 2px solid #F39C12
-
     
-    }
-#tenday {
-    display:none
 }
-section.forecast h3 {
-    border-style: solid;
-    border-color: #F39C12;
-    margin-left: auto;
-    margin-left: auto;
-}
-table {
-    border-collapse: collapse;
-    align-content: center;
-    margin-left:auto; 
-    margin-right:auto;  
-   }
-table, th, td {
-    border: 2px solid #F39C12;
-    padding: 10px
-       }
-main figure { 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    
-    }
-main figure img { 
-    display: inline-flex;
-    justify-content: center;
-    min-width: 325px;
-    border: solid 5pt;
-    border-color: #F39C12;
-    }
-
-
-h3 {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around ;
-    align-items: center;
-    font-size: 2.5rem;
-    
-    }
-
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    min-width: 325px; /* fill the page in the small/phone view */
-    margin: 0;
-    border: solid;
-    border-color: #154360;
-}
-article {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center
-}
-
-footer {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    
-    background-color: #154360;
-   
-}
-footer aside {
-    color: #F39C12
-
-}
-footer>p {
-    color: #F39C12
-       
-} /* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */

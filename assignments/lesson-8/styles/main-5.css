@@ -6,7 +6,7 @@
 
 body {
    font-size: 16px;
-   /*font-family: "Ariel", "Times New Roman";*/
+   font-family: "Ariel", "Times New Roman";
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #e7ecef
       
@@ -58,7 +58,7 @@ nav button {
 
 
 nav ul {
-    /*display: none;*/
+    display: none;
     list-style-type: none;
     margin: 1rem;
     padding: 1rem;
@@ -66,7 +66,7 @@ nav ul {
 }
 
 nav ul.hide {
-    display: none;
+    display:block ;
 }
 
 nav ul li {
@@ -149,7 +149,9 @@ main figure img {
     border: solid 5pt;
     border-color: #F39C12;
     }
-
+section, div {margin: 1rem;}
+.form 
+#aNum {border:1px solid #bbeedd; background-color:#aaffcc; text-align:center;}
 
 h3 {
     display: flex;
