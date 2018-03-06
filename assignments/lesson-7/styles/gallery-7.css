@@ -1,9 +1,24 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
+    /* This main css file contains the default rules and is geared toward the small/phone view */
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-main h2 {
-    font-size: 3rem;
-    text-align: center;
+h1 {
+    font-size: 4rem;
+    color: #154360;
+    text-align: center
 }
-    
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  
+  padding: 10px;
+}
+.grid-item {
+  background-color: #F39C12(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 16px;
+  color: #154360;
+  text-align: center;
+}
+

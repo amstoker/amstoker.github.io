@@ -1,27 +1,24 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
-grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 50px;
-  padding: 10px;
-}
- 
-    
-grid-item1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+h1 {
+    font-size: 4rem;
+    color: #154360;
+    text-align: center
 }
 
-grid-item2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  
+  padding: 10px;
 }
-    
-grid-item3 {
-  grid-column-start: 3;
-  grid-column-end: 4;
+.grid-item {
+  background-color: #F39C12(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 16px;
+  color: #154360;
+  text-align: center;
 }
-    
- 

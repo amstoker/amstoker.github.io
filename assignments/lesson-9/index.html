@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wait 15 Minutes</title>
+    
+  <meta name="author" content="allison stoker">
+  <meta name="description" content="Home Page">
+  <!-- external style references in the proper cascading order -->     
+    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+      <link href="styles/gallery-7.css" rel="stylesheet">
+    <link href="styles/gallery-medium.css" rel="stylesheet">
+    <link href="scripts/gallery-large.css" rel="stylesheet">
+    <link href="styles/stormcenter.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    
+    </head>
+    
+<body>
+
+  <header>
+        <img src="images/logo.png" alt="The site logo" width="940" height="400">
+    <h1>Wait 15 Minutes</h1>
+    <div class="subheading">Don't like the weather? Just Wait 15 Minutes!</div>
+  </header>
+
+
+<!-- site navigation use placeholder references -->
+  <nav> 
+         <button  onclick="toggleNavMenu()">&#9776;</button> 
+      <ul id="NavMenu" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+        
+      </ul>
+     
+    </nav>
+
+  
+
+     
+      <section>
+
+      </section>
+
+    <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+    var requestURL = ' https://byui-cit230.github.io/weather/data/towndata.json';
+    var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+    var townData = request.response;
+        populateHeader(townData);
+        townData(townData);
+}
+     function populateHeader(jsonObj) {
+        var myH1 = document.createElement('h1');
+            myH1.textContent = jsonObj['name'];
+            header.appendChild(myH1);
+
+        var myPara = document.createElement('p');
+            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+            header.appendChild(myPara);
+}   
+        function showHeroes(jsonObj) {
+  var heroes = jsonObj['members'];
+      
+  for (var i = 0; i < heroes.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myList = document.createElement('ul');
+
+    myH2.textContent = heroes[i].name;
+    myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+    myPara2.textContent = 'Age: ' + heroes[i].age;
+    myPara3.textContent = 'Superpowers:';
+        
+    var superPowers = heroes[i].powers;
+    for (var j = 0; j < superPowers.length; j++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = superPowers[j];
+      myList.appendChild(listItem);
+    }
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myList);
+
+    section.appendChild(myArticle);
+  }
+}
+    </script>
+  </body>
+</html>

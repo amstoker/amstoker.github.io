@@ -1,0 +1,196 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+
+
+body {
+   font-size: 16px;
+   font-family: "Ariel", "Times New Roman";
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #e7ecef
+      
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: 1.25rem auto;
+    padding: 1rem;
+    max-width: 1400px;
+   
+    
+}
+
+header {
+    font-size: 1.5rem ;
+    color: #154360;
+}
+header h1 {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: center
+    font-size: 5rem;
+    color: #154360;
+    border-bottom: 3px solid #154360
+    
+}
+header img {
+    width: 200px;
+    height: auto;
+    
+}
+header .subheading {
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    color: #F39C12;
+}
+
+
+nav {display:hide;
+    
+}
+nav button {
+    display:block;}
+    * {margin:0}
+
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #154360;
+}
+
+nav ul.hide {
+    display:block ;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+nav ul li a {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+nav ul li.active a {
+    background-color: #F39C12;
+    color: white;
+}
+nav ul li a:hover {
+    background-color: #F39C12
+}
+
+
+main {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 350px;
+    color: #154360
+}
+
+main h2 {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 2px solid #F39C12
+
+    
+    }
+#tenday {
+    display:none
+}
+section.forecast h3 {
+    border-style: solid;
+    border-color: #F39C12;
+    margin-left: auto;
+    margin-left: auto;
+}
+table {
+    border-collapse: collapse;
+    align-content: center;
+    margin-left:auto; 
+    margin-right:auto;  
+   }
+table, th, td {
+    border: 2px solid #F39C12;
+    padding: 10px
+       }
+main figure { 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    
+    }
+main figure img { 
+    display: inline-flex;
+    justify-content: center;
+    min-width: 325px;
+    border: solid 5pt;
+    border-color: #F39C12;
+    }
+section, div {margin: 1rem;}
+.form 
+#aNum {border:1px solid #bbeedd; background-color:#aaffcc; text-align:center;}
+
+h3 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around ;
+    align-items: center;
+    font-size: 2.5rem;
+    
+    }
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    min-width: 325px; /* fill the page in the small/phone view */
+    margin: 0;
+    border: solid;
+    border-color: #154360;
+}
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #154360;
+   
+}
+footer aside {
+    color: #F39C12
+
+}
+footer>p {
+    color: #F39C12
+       
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
