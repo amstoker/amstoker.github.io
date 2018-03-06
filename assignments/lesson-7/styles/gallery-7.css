@@ -21,4 +21,41 @@ h1 {
   color: #154360;
   text-align: center;
 }
+.grid-container {
+     display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 5px;
+}
 
+/* Create four equal columns that sits next to each other */
+.grid-item {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  grid-gap: 5px;
+}
+
+.grid-item img {
+  margin-top: 8px;
+  vertical-align: middle;
+  grid-column-gap: 20px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .grid-item {
+    flex: 33%;
+    max-width: 33%;
+    grid-gap: 5px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-item {
+    flex: 100%;
+    max-width: 100%;
+    grid-gap: 5px;
+  }
+}
