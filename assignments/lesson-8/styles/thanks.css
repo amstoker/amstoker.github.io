@@ -3,7 +3,6 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 
-
 body {
    font-size: 16px;
    font-family: "Ariel", "Times New Roman";
@@ -92,6 +91,7 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: #F39C12
 }
+
 
 h1 {
     display: inline-flex;
