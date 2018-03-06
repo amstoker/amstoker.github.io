@@ -65,7 +65,7 @@ nav ul {
 }
 
 nav ul.hide {
-    display: none;
+    display: block;
 }
 
 nav ul li {
