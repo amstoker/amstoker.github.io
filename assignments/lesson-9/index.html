@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wait 15 Minutes</title>
     
   <meta name="author" content="allison stoker">
@@ -19,6 +21,7 @@
     <link href="styles/stormcenter.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     
+
     </head>
     
 <body>
@@ -27,30 +30,51 @@
         <img src="images/logo.png" alt="The site logo" width="940" height="400">
     <h1>Wait 15 Minutes</h1>
     <div class="subheading">Don't like the weather? Just Wait 15 Minutes!</div>
-  </header>
 
+        </header>
 
 <!-- site navigation use placeholder references -->
-  <nav> 
-         <button  onclick="toggleNavMenu()">&#9776;</button> 
+  <nav>
+        <button  onclick="toggleNavMenu()">&#9776;</button> 
       <ul id="NavMenu" class="hide">
-    	<li><a href="#">Home</a></li>
-    	<li class="active"><a href="#">Franklin</a></li>
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
     	<li><a href="stormcenter.html">Storm Center</a></li>
     	<li><a href="gallery-7.html">Gallery</a></li>
         
       </ul>
-     
+
     </nav>
 
-  
 
      
       <section>
 
       </section>
+    <footer>
+      
+      
+    
+      <p>Wait 15 Minutes</p>
+      <p>123 Main St.</p>
+      <p>Franklin,MU 83454</p>
+      <p>(999)999-9999</p>
+      <p>contact@theurl.com</p>
+    
+
+    
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Wait 15 Minutes | <span id="currentdate"></span></p>
+  </footer>
+
+   
+  
+    
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+
 
     <script>
     var header = document.querySelector('header');
@@ -62,20 +86,20 @@
         request.send();
         request.onload = function() {
     var townData = request.response;
-        populateHeader(townData);
-        townData(townData);
+        populateHeader(weather);
+        showData(weather);
 }
      function populateHeader(jsonObj) {
         var myH1 = document.createElement('h1');
-            myH1.textContent = jsonObj['name'];
+            myH1.textContent = jsonObj['townName'];
             header.appendChild(myH1);
 
         var myPara = document.createElement('p');
-            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+            myPara.textContent = 'Home Town: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
             header.appendChild(myPara);
 }   
-        function showHeroes(jsonObj) {
-  var heroes = jsonObj['members'];
+        function showData(jsonObj) {
+  var heroes = jsonObj['towns'];
       
   for (var i = 0; i < heroes.length; i++) {
     var myArticle = document.createElement('article');
@@ -85,15 +109,16 @@
     var myPara3 = document.createElement('p');
     var myList = document.createElement('ul');
 
-    myH2.textContent = heroes[i].name;
-    myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-    myPara2.textContent = 'Age: ' + heroes[i].age;
-    myPara3.textContent = 'Superpowers:';
+    myH2.textContent = towns[i].name;
+    myPara1.textContent = 'Motto: ' + towns[i].motto;
+    myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
+    myPara3.textContent = 'Current Population:' + towns[i].currentPopulation;
+    myPara4.textContent = 'Average Rainfall' + towns[i].averageRainfall
         
-    var superPowers = heroes[i].powers;
-    for (var j = 0; j < superPowers.length; j++) {
+    var events = towns[i].events;
+    for (var j = 0; j < towns.length; j++) {
       var listItem = document.createElement('li');
-      listItem.textContent = superPowers[j];
+      listItem.textContent = events[j];
       myList.appendChild(listItem);
     }
 
@@ -101,6 +126,7 @@
     myArticle.appendChild(myPara1);
     myArticle.appendChild(myPara2);
     myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
     myArticle.appendChild(myList);
 
     section.appendChild(myArticle);
