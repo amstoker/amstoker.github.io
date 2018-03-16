@@ -10,7 +10,7 @@
   <meta name="author" content="allison stoker">
   <meta name="description" content="Home Page">
   <!-- external style references in the proper cascading order -->     
-    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+       <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
     <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
     <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -19,7 +19,7 @@
     <link href="styles/gallery-medium.css" rel="stylesheet">
     <link href="scripts/gallery-large.css" rel="stylesheet">
     <link href="styles/stormcenter.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    
     
 
     </head>
@@ -73,65 +73,6 @@
     
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
-  <script src="scripts/windchill.js"></script>
-
-
-    <script>
-    var header = document.querySelector('header');
-    var section = document.querySelector('section');
-    var requestURL = ' https://byui-cit230.github.io/weather/data/towndata.json';
-    var request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
-        request.onload = function() {
-    var townData = request.response;
-        populateHeader(weather);
-        showData(weather);
-}
-     function populateHeader(jsonObj) {
-        var myH1 = document.createElement('h1');
-            myH1.textContent = jsonObj['townName'];
-            header.appendChild(myH1);
-
-        var myPara = document.createElement('p');
-            myPara.textContent = 'Home Town: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-            header.appendChild(myPara);
-}   
-        function showData(jsonObj) {
-  var heroes = jsonObj['towns'];
-      
-  for (var i = 0; i < heroes.length; i++) {
-    var myArticle = document.createElement('article');
-    var myH2 = document.createElement('h2');
-    var myPara1 = document.createElement('p');
-    var myPara2 = document.createElement('p');
-    var myPara3 = document.createElement('p');
-    var myList = document.createElement('ul');
-
-    myH2.textContent = towns[i].name;
-    myPara1.textContent = 'Motto: ' + towns[i].motto;
-    myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-    myPara3.textContent = 'Current Population:' + towns[i].currentPopulation;
-    myPara4.textContent = 'Average Rainfall' + towns[i].averageRainfall
-        
-    var events = towns[i].events;
-    for (var j = 0; j < towns.length; j++) {
-      var listItem = document.createElement('li');
-      listItem.textContent = events[j];
-      myList.appendChild(listItem);
-    }
-
-    myArticle.appendChild(myH2);
-    myArticle.appendChild(myPara1);
-    myArticle.appendChild(myPara2);
-    myArticle.appendChild(myPara3);
-    myArticle.appendChild(myPara4);
-    myArticle.appendChild(myList);
-
-    section.appendChild(myArticle);
-  }
-}
-    </script>
+  <script src="scripts/towndata.js"></script>
   </body>
 </html>

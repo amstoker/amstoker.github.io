@@ -2,8 +2,8 @@ var t = 22;
 var s = 18;
 var f = getWindChillFactor(t, s);
 
-document.getElementById("windspeed").innerHTML = s;
-document.getElementById("temp").innerHTML = t + "&deg";
+document.getElementById("windSpeed").innerHTML = s;
+document.getElementById("currentTemp").innerHTML = t + "&deg";
 document.getElementById("windChillFactor").innerHTML = f + "&deg";
 
 console.log(f);
