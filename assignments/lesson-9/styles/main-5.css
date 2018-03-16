@@ -58,7 +58,6 @@ nav button {
 
 
 nav ul {
-    
     list-style-type: none;
     margin: 1rem;
     padding: 1rem;
@@ -66,7 +65,7 @@ nav ul {
 }
 
 nav ul.hide {
-    display:none;
+    display:block;
 }
 
 nav ul li {
