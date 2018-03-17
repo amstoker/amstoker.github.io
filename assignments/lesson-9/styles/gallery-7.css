@@ -42,6 +42,18 @@ h1 {
   vertical-align: middle;
   grid-column-gap: 20px;
 }
+
+div {
+    margin:.5rem;}
+a {margin-right: 1rem;}
+/* hover effect - not anchor tags around images */
+img:hover {box-shadow: 5px 5px 5px #F39C12;}
+/* rounded corners - boxmodel */
+.rocorn {border-radius: 5px 50px;}
+/* simple opacity */
+.opac {opacity: .5;}
+
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
   .grid-item {

@@ -49,7 +49,8 @@ header .subheading {
 }
 
 
-nav {display:hide;
+nav {
+    display:hide;
     
 }
 nav button {
@@ -65,11 +66,10 @@ nav ul {
 }
 
 nav ul.hide {
-    display:none;
+    display:;
 }
 
 nav ul li {
-   
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -149,16 +149,69 @@ main figure img {
     border: solid 5pt;
     border-color: #F39C12;
     }
-section, div {margin: 1rem;}
-.form 
-#aNum {border:1px solid #bbeedd; background-color:#aaffcc; text-align:center;}
+main section h1 {
+    font-size: 1.5rem;
+}
+
+main section h3 {
+    font-size: 2rem;
+}
+
+section, div {
+    margin: 1rem;
+}
+
+section article {
+    display: block;
+    flex-flow: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-style: solid;
+    border-color: #F39C12;
+    border-collapse: collapse;
+    align-content: center;
+    max-width: 350px;
+  }
+
+
+
+section p {
+    color: #F39C12;
+    padding: .25rem;
+      margin: 5px 0;
+}
+
+
+
+section h2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #154360
+}
+
+section ul {
+    list-style-type: circle;
+    flex-flow: column;
+    color: #154360;
+    font-size: 1rem;
+    padding-top: .25rem
+    margin-top: 0;
+    
+}
+//*.form 
+#aNum {border:1px solid #bbeedd; background-color:#aaffcc; text-align:center;}*//
+
 
 h3 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around ;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     
     }
 
@@ -170,7 +223,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
 }
 article {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center
 }

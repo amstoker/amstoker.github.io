@@ -48,12 +48,12 @@ nav {display:hide;
     
 }
 nav button {
-    display:block;}
+    display:;}
     * {margin:0}
 
 
 nav ul {
-    display: none;
+    
     list-style-type: none;
     margin: 1rem;
     padding: 1rem;

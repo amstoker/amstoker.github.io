@@ -11,8 +11,7 @@ var header = document.querySelector('header');
 }  
         function showData(jsonObj) {
   var towns = jsonObj['towns'];
-
-            
+      
   for (var i = 0; i < towns.length; i++) {
     var myArticle = document.createElement('article');
     var myH2 = document.createElement('h2');

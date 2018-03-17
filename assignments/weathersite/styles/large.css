@@ -1,0 +1,45 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+     nav {
+        display: inline;
+    }
+    
+    main {
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+        padding-left: 100px;
+        max-width: 1275px;
+        color: #154360;
+    }
+    main figure img {
+        min-width: 1000px;
+    }
+   body {
+        align-content: center;
+        padding: 0;
+    }
+  article p.town-article img { width: 29.333%; }
+  
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    li{
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #111;
+    }
+}
+    

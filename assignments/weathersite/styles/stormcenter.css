@@ -1,0 +1,67 @@
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+nav ul li a {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input,textarea {
+    
+    width:30%;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 350px;
+    color: #154360
+
+
+label {
+   
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 350px;
+    color: #154360
+    width:15%;
+}
+
+/*body {line-height: 2em;}
+
+h2 {margin-left:20px;border-bottom:1px solid #777; font-size: 1.2em;color:#3377bb;}
+
+.ablock {margin-left:40px;}
+
+.tight input {margin:-10px 0px;}
+
+input { margin:10px 15px; font-size:1em; color: #3377bb; }
+
+label {margin-right:-10px;}
+
+fieldset {margin-bottom:15px;background-color:#eee;}
+
+legend { color: #3377bb}*/
+
+footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #154360;
+   
+}
+footer aside {
+    color: #F39C12
+
+}
+footer>p {
+    color: #F39C12
