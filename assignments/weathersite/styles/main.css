@@ -158,29 +158,39 @@ main section h3 {
     font-size: 2rem;
 }
 
+
+figure img {
+    display: inline-flex;
+    flex-flow: row wrap;
+    margin-left: 15px;
+    margin-right: 50px;
+     }
+
 section, div {
-    margin: 1rem;
-}
+    margin: rem;
+    }
 
 section article {
-    display: block;
-    flex-flow: row;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
     border-style: solid;
-    border-color: #F39C12;
-    border-collapse: collapse;
-    align-content: center;
-    max-width: 350px;
+    border-color: #154360;
+    border-collapse:  collapse;
+    max-width: 500px;
+    
   }
-
-
 
 section p {
     color: #F39C12;
-    padding: .25rem;
+    padding: .rem;
       margin: 5px 0;
+    font-size: 16px;
 }
 
 
@@ -194,7 +204,7 @@ section h2 {
     color: #154360
 }
 
-section ul {
+section ul li{
     list-style-type: circle;
     flex-flow: column;
     color: #154360;
@@ -217,16 +227,21 @@ h3 {
     }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    min-width: 325px; /* fill the page in the small/phone view */
-    margin: 0;
+    min-width: 500px; /* fill the page in the small/phone view */
+    margin-right: auto;
     border: solid;
-    border-color: #154360;
+    border-color: #F39C12;
 }
 article {
+    font-size: 1.5rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center
+}
+article h3 {
+    font-size: 3rem;
+    text-decoration-line: underline;
 }
 
 footer {
@@ -234,8 +249,7 @@ footer {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    
-    background-color: #154360;
+        background-color: #154360;
    
 }
 footer aside {

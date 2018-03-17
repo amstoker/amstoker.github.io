@@ -12,7 +12,7 @@ var header = document.querySelector('header');
         function showData(jsonObj) {
   var towns = jsonObj['towns'];
       
-  for (var i = 0; i < towns.length; i++) {
+  for (var i = 0; i < towns.length; i++) { if(i===2) i=3;
     var myArticle = document.createElement('article');
     var myH2 = document.createElement('h2');
     var myPara1 = document.createElement('p');
