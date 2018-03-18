@@ -3,7 +3,7 @@
 var weatherObject = new XMLHttpRequest();
 var weatherObjects = new XMLHttpRequest();
 
-weatherObject.open('GET', 'https://api.wunderground.com/api/188b7762a0954c3b/conditions/q/MN/Franklin.json', 'true');
+weatherObject.open('GET', 'http://api.wunderground.com/api/188b7762a0954c3b/conditions/q/MN/Franklin.json', 'true');
 
 weatherObject.send();
 
@@ -29,7 +29,7 @@ weatherObject.onload = function() {
        
 }
 
-weatherObjects.open ('GET','https://api.wunderground.com/api/188b7762a0954c3b/forecast/q/MN/Franklin.json', 'true');
+weatherObjects.open ('GET','http://api.wunderground.com/api/188b7762a0954c3b/forecast/q/MN/Franklin.json', 'true');
 
 weatherObjects.send();
 
@@ -37,7 +37,7 @@ weatherObjects.onload = function() {
     
       var weatherInfo = JSON.parse(weatherObjects.responseText);
     console.log(weatherInfo);
-     document.getElementById('weatherDetail').innerHTML = weatherInfo.forecast.simpleforecast;
+     //*document.getElementById('weatherDetail').innerHTML = weatherInfo.forecast.simpleforecast;*//
     
      document.getElementById('high').innerHTML = weatherInfo.forecast.simpleforecast.forecastday["0"].high;
     
