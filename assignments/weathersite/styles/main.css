@@ -227,7 +227,7 @@ h3 {
     }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    min-width: 500px; /* fill the page in the small/phone view */
+    min-width: 350px; /* fill the page in the small/phone view */
     margin-right: auto;
     border: solid;
     border-color: #F39C12;
