@@ -67,10 +67,11 @@ nav ul {
 }
 
 nav ul.hide {
-    display:block;
+    display: block;
 }
 
 nav ul li {
+    
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -180,7 +181,7 @@ section article {
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;    
-    margin-left: 20px;
+    margin-left: 90px;
     margin-right: 20px;
     margin-bottom: 20px;
     
