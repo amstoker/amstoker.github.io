@@ -50,7 +50,7 @@ header .subheading {
 
 
 nav {
-    display:hide;
+    /*display:hide;*/
     
 }
 nav button {
@@ -59,7 +59,7 @@ nav button {
 
 
 nav ul {
-    display: none;
+   
     list-style-type: none;
     margin: 1rem;
     padding: 1rem;
@@ -67,7 +67,7 @@ nav ul {
 }
 
 nav ul.hide {
-    display: block;
+    display: none;
 }
 
 nav ul li {

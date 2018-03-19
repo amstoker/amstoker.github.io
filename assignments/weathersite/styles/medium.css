@@ -25,10 +25,10 @@
     
     nav.ul.hide {display: block;}
     
-    nav ul {
+    /*nav ul {
         display: block;
     }
-    
+    */
     
   #tenday { 
       display: inline; }  /* show the 10-day forecast with the medium view and up */
