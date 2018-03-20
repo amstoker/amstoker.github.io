@@ -17,12 +17,19 @@
         min-width: 35em;
         align-content: center;
     }
+        nav ul.hide {
+
+    display: block;
+
+}
+    
+    
     nav {
         display: inline;
     }
   nav button { 
       display:none; }  /* hamburger button does not need to be shown */
-    nav.ul.hide {display: block;}
+   
     nav ul {
         display: block;
     }

@@ -17,6 +17,13 @@
         min-width: 35em;
         align-content: center;
     }
+        nav ul.hide {
+
+    display: block;
+
+}
+    
+    
     nav {
         display: inline;
     }

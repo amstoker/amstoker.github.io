@@ -44,11 +44,11 @@ header .subheading {
     color: #F39C12;
 }
 
-nav {display:hide;
+nav /*{display:hide;*/
     
 }
 nav button {
-    display:;}
+    display:block;}
     * {margin:0}
 
 
@@ -59,7 +59,9 @@ nav ul {
     padding: 1rem;
     background-color: #154360;
 }
-    
+   nav ul.hide {
+    display: none;
+} 
 
 }
 nav ul li {
@@ -69,7 +71,7 @@ nav ul li {
     overflow: hidden;
     }
 nav ul li a {
-    display: block;
+    display: inline-flex;
     color: white;
     text-align: center;
     padding: 14px 16px;
