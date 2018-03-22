@@ -18,12 +18,8 @@
         align-content: center;
     }
     nav ul.hide {
+      display: block;}
 
-    display: block;
-
-}
-
-  
     nav {
         display: inline;
     }

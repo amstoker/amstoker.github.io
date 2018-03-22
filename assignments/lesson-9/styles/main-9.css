@@ -49,8 +49,9 @@ header .subheading {
 }
 
 
-nav {display:hide;
-    
+nav {
+    /*display:hide;
+    */
 }
 nav button {
     display:block;}

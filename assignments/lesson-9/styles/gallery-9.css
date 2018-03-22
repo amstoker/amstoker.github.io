@@ -31,8 +31,8 @@ h1 {
 
 /* Create four equal columns that sits next to each other */
 .grid-item {
-  flex: 25%;
-  max-width: 25%;
+  flex: 50%;
+  max-width: %;
   padding: 0 4px;
   grid-gap: 5px;
 }
@@ -52,6 +52,7 @@ img:hover {box-shadow: 5px 5px 5px #F39C12;}
 .rocorn {border-radius: 5px 50px;}
 /* simple opacity */
 .opac {opacity: .5;}
+}
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */

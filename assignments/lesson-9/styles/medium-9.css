@@ -17,24 +17,44 @@
         min-width: 35em;
         align-content: center;
     }
+    nav ul.hide {
+      display: block;}
+
     nav {
         display: inline;
     }
   nav button { 
       display:none; }  /* hamburger button does not need to be shown */
+    
     nav.ul.hide {display: block;}
-    nav ul {
+    
+    /*nav ul {
         display: block;
     }
-    
+    */
     
   #tenday { 
       display: inline; }  /* show the 10-day forecast with the medium view and up */
   
+ section ul li {
+    list-style-type: circle;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 1px 1px;
+    font-size: 1rem;
+     margin: .5rem;
+    padding: .5rem;
+    
+}   
+    
+    
   article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
 
     ul {
-        list-style-type: non;
+        list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
