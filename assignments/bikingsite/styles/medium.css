@@ -1,0 +1,41 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+      nav ul.hide {
+      display: block;}
+
+    nav {
+        display: inline;
+    }
+  nav button { 
+      display:none; }  /* hamburger button does not need to be shown */
+    
+    nav.ul.hide {display: block;}
+    
+    /*nav ul {
+        display: block;
+    }
+    */
+    
+     ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    li{
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #111;
+    }
+   
+   }
