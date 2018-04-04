@@ -5,7 +5,7 @@ body {
    font-size: 16px;
    font-family: "Ariel", "Times New Roman";
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #e7ecef
+    background-color: #99c382
       
   /* Declare the base font-family - from google font api or other */
 }
@@ -22,28 +22,41 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 header {
     font-size: 1.5rem ;
     color: #154360;
+    background-color: #586f3f;
 }
-header h1 {
+header {
     display: inline-flex;
     flex-flow: column nowrap;
     justify-content: center
     font-size: 5rem;
     color: #154360;
-    border-bottom: 3px solid #154360
+    border-bottom: 3px solid #154360;
+    height: 100px;
+    
     
 }
 header img {
-    width: 200px;
+    width: 600px;
     height: auto;
     
 }
-header .subheading {
+header {
     font-size: 1.5rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     color: #F39C12;
 }
+
+figure img { 
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 0px;
+    max-width: 100%;
+    //*min-width: 325px;*//
+    //*border: solid 5pt;
+    border-color: #F39C12;*//
+    }
 
 
 nav {
@@ -57,9 +70,9 @@ nav button {
 
 nav ul {
     list-style-type: none;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #154360;
+    margin: ;
+    padding: .25rem;
+    background-color: #272825;
 }
 
 nav ul.hide {
@@ -76,23 +89,39 @@ nav ul li {
 nav ul li a {
     display: inline-flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 14px 16px;
+    padding: 5px 7px;
     text-decoration: none;
     font-size: 1.5rem;
 }
 nav ul li.active a {
-    background-color: #F39C12;
+    background-color: #586f3f;
     color: white;
 }
 nav ul li a:hover {
-    background-color: #F39C12
+    background-color: #8fc4e5
 }
 
-
-
+main figure { 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width:100%;
+    
+    }
+main figure img { 
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 0px;
+    max-width: 100%;
+    //*min-width: 325px;*//
+    //*border: solid 5pt;
+    border-color: #F39C12;*//
+    }
 
 
 footer {
@@ -100,14 +129,14 @@ footer {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-        background-color: #154360;
+        background-color: #272825;
    
 }
 footer aside {
-    color: #F39C12
+    color: #586f3f
 
 }
 footer>p {
-    color: #F39C12
+    color: #586f3f
        
 }
