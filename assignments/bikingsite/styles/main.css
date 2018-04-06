@@ -109,15 +109,15 @@ main figure {
     display: inline-flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: 5px;
     width:100%;
     
     }
-main figure img { 
+main img { 
     display: inline-flex;
     justify-content: center;
-    align-items: flex-end
+    align-items: center;
     margin-left: 5px;
     padding-bottom: 20px;
     max-width: 100%;
@@ -126,28 +126,45 @@ main figure img {
     border-color: #F39C12;*//
     }
 
+main p {
+    font-size: 20px;
+    color: #272825;
+    max-width: 500px;
+    display: flex;
+    align-content: flex-end;
+}
+
 article p {  
     min-width: 350px; /* fill the page in the small/phone view */
     margin-right: auto;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     border: ;
     border-color: #;
-    align-items: flex-end
+    align-items: flex-end;
 }
 article {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    color: #272825;
     padding-bottom: 10px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: flex-start
+    align-items: flex-start;
     
 }
 h3 {
     font-size: 3rem;
+    color: #272825;
     text-decoration-line: underline;
     padding-top: 25px;
     padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    color: #272825;
 }
 
 section {
