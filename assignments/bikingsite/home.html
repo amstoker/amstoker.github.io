@@ -13,6 +13,7 @@
     <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
     <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
     <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    <link href="styles/button.css" rel="stylesheet">
         </head>
 <body>
     
@@ -20,9 +21,9 @@
        <img src="images/logo.png" alt="The site logo" >
     
     </header>
-     <figure>
+     <!--<figure>
       <img src="images/down.jpg" alt="downhill biker" width="1350" >
-    </figure>
+    </figure>-->
          
          
     <nav>
@@ -40,8 +41,35 @@
     </nav>
     
     <main>
-          
+      <div class="slideshow-container">
 
+<div class="mySlides fade">
+    <img src="images/look1.jpg" style="width: 1350px">
+  </div>
+
+<div class="mySlides fade">
+    <img src="images/ride1.jpg" style="width:1350px">
+  </div>
+
+<div class="mySlides fade">
+    <img src="images/down.jpg" style="width:1350px">
+  </div>
+
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+        <p>Book a bike tour today and have an adventure!</p>
+        <br>
+        <div class="container">
+		<a href="tours.html" class="toggleBtn">Book a Tour</a>
+        </div>
     </main>
     
     <footer>
@@ -58,9 +86,10 @@
   </footer>
     
    
-    
+    <script src="scripts/slideshow.js"></script>
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
+            
     
     </body>
 </html>
