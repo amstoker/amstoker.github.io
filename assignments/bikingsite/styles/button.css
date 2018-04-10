@@ -1,5 +1,5 @@
 .container {
-	position:;
+	/*position:;*/
 	width:225px;
 	height:25px;
 	top:0px;
@@ -10,10 +10,10 @@
 }
 
 .toggleBtn {
-	position: ;
+	/*position: ;*/
 	width: 100px;
 	height: 10px;
-	border: ;
+	/*border: ;*/
 	padding: 25px;
 	top:0px;
 	background: #586f3f;

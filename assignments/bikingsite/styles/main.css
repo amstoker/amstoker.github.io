@@ -27,7 +27,7 @@ header {
 header {
     display: inline-flex;
     flex-flow: column nowrap;
-    justify-content: center
+    justify-content: center;
     font-size: 5rem;
     color: #154360;
     border-bottom: 3px solid #8fc4e5;
@@ -53,9 +53,9 @@ figure img {
     justify-content: center;
     margin-left: 0px;
     max-width: 100%;
-    //*min-width: 325px;*//
-    //*border: solid 5pt;
-    border-color: #F39C12;*//
+    /*min-width: 325px;*/
+    /*border: solid 5pt;
+    border-color: #F39C12;*/
     }
 
 
@@ -71,7 +71,7 @@ nav button {
 
 nav ul {
     list-style-type: none;
-    margin: ;
+    /*margin: ;*/
     padding: .25rem;
     background-color: #272825;
 }
@@ -114,7 +114,7 @@ img {vertical-align: middle;}
 .slideshow-container {
   max-width: 1350px;
   position: relative;
-  margin: 2 auto;
+  margin: 0 auto;
     
 }
 
@@ -145,9 +145,9 @@ main img {
     margin-left: 5px;
     padding-bottom: 20px;
     max-width: 100%;
-    //*min-width: 325px;*//
-    //*border: solid 5pt;
-    border-color: #F39C12;*//
+    /*min-width: 325px;*/
+    /*border: solid 5pt;
+    border-color: #F39C12;*/
     }
 
 main p {
@@ -161,17 +161,13 @@ main p {
 
 
     
-}
-    
-}
+
 
 article p {  
     min-width: 350px; /* fill the page in the small/phone view */
     margin-right: auto;
     padding-bottom: 5px;
     padding-top: 5px;
-    border: ;
-    border-color: #;
     align-items: flex-end;
 }
 article {
