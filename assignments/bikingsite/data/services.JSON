@@ -1,7 +1,24 @@
-{
-    "True Wheels" : 12.99,
-    "Adjust Brakes" : 13.50,
-    "Install New Chain" : 14.99,
-    "Inner Tube" : 6.99,
-    "Adjust/Install Brakes" : 10.00,
+{ 
+    "services" : [
+        {    
+            "type" : "trueWheels",
+            "price" : 12.99
+        },
+        {
+            "type" : "adjustBrakes",
+            "price" : 13.50
+        },
+        {
+            "type" : "installNewChain",
+            "price" : 14.99
+        },
+        {
+            "type" : "newInnerTube",
+            "price" : 6.99
+        },
+        {
+            "type": "adjustInstallBrakes",
+            "price" : 10.00
+        }
+    ]
 }
