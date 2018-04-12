@@ -1,11 +1,8 @@
 @media only screen and (min-width: 37.5em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-    
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 400px 400px;
 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 400px 400px;
-  
-  padding: 10px;
-}
+        padding: 10px;
+    }
