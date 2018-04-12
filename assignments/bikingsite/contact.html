@@ -50,15 +50,18 @@
          
          
          
-         <h2>Contact Us</h2>  
+         <h2>Contact Us</h2>
+         
+         <form action="/action_page.php" method="post"> 
+         
          <div>
             <p>Your Name</p>
-            <input type="text" name="name" required pattern="[A-Za-z]{5}">
+            <input type="text" name="name" required>
             
         </div>
         <div>
             <p>Your Email</p>
-            <input  type="email" name="email" placeholder="youremail@email.com">
+            <input  type="email" name="email" placeholder="youremail@email.com" required>
             
         </div>
        
@@ -68,12 +71,11 @@
             
         </div>
         
-        <div>
-            <form action="thanks.html">
-            <input type="submit">
+        <input type="submit" value="Submit">
+            
             </form>
             
-            </div>
+           
 
     </main>
     
